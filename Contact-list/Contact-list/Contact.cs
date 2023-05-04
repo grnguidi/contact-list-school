@@ -41,5 +41,29 @@ namespace Contact_list
                 }
             } 
         }   
-    }
+    
+        //class bulding metod
+
+        public Contact()
+        {
+            FirstName = "José";
+            LastName = "Da Silva";
+            Phone= "11-96512-2170";
+        }
+
+        //metod overcharge
+
+        public Contact(string firstname, string lastname,string phone ) 
+        { 
+            FirstName = firstname;
+            LastName = lastname;
+            Phone = phone;
+        }
+
+        public override string ToString()
+        {
+            string saida = string.Empty;
+        }
+
+    }       
 }
