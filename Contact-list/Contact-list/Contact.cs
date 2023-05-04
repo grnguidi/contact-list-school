@@ -29,7 +29,17 @@ namespace Contact_list
         public string Phone
         { 
             get { return Phone;  }
-            set { Phone = value; } 
+            set 
+            {
+                if (value.Length == 11)
+                {
+                    Phone = value;
+                }
+                else
+                {
+                    Phone = "00-00000-0000";
+                }
+            } 
         }   
     }
 }
