@@ -64,24 +64,12 @@ namespace Contact_list
         {
             string saida = string.Empty;
             saida += String.Format("{0}, {1}", FirstName, LastName);
-            saida += String.Format("{0}-{1}-{2}", Phone.Substring(0, 1), Phone.Substring(2,4), Phone.Substring(7,3));
+            saida += String.Format("{0}-{1}-{2}",
+                    Phone.Substring(0, 1),
+                    Phone.Substring(2,4),
+                    Phone.Substring(7,3));
             return saida;
         }
 
     }       
-
-    public partial class Form1 : Form
-    {
-        public Form1()
-        {
-            InitializeComponent();
-        }
-
-        private void addcontactbtn_click(object sender, EventArgs e) 
-        { 
-            Contact objcontact = new Contact();
-            contactlst.Items.Add(objcontact.ToString());
-            //contactlst.Items.add(objectcontact.toString());
-        }
-    }
 }

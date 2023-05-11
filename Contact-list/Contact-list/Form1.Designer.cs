@@ -140,7 +140,7 @@ namespace Contact_list
             this.addcontactbtn.TabIndex = 7;
             this.addcontactbtn.Text = "Add Contact";
             this.addcontactbtn.UseVisualStyleBackColor = true;
-            this.addcontactbtn.Click += new System.EventHandler(this.button1_Click);
+            this.addcontactbtn.Click += new System.EventHandler(this.Button1_Click);
             // 
             // Form1
             // 

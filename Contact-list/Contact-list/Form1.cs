@@ -32,10 +32,11 @@ namespace Contact_list
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             Contact objcontact = new Contact();
             contactlst.Items.Add(objcontact.ToString());
         }
      }
 }
+
