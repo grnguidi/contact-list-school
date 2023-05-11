@@ -79,8 +79,9 @@ namespace Contact_list
 
         private void addcontactbtn_click(object sender, EventArgs e) 
         { 
-            Contact contact = new Contact();
-            contactlst.Items.add(objectcontact.toString());
+            Contact objcontact = new Contact();
+            contactlst.Items.Add(objcontact.ToString());
+            //contactlst.Items.add(objectcontact.toString());
         }
     }
 }
