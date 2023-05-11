@@ -49,6 +49,7 @@ namespace Contact_list
             FirstName = "José";
             LastName = "Da Silva";
             Phone= "11-96512-2170";
+            Email = "josedasilva@gmail.com";
         }
 
         //metod overcharge
@@ -58,6 +59,7 @@ namespace Contact_list
             FirstName = firstname;
             LastName = lastname;
             Phone = phone;
+            Email = email;
         }
 
         public override string ToString()
