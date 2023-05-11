@@ -68,7 +68,7 @@ namespace Contact_list
                     Phone.Substring(0, 1),
                     Phone.Substring(2,4),
                     Phone.Substring(7,3));
-            return saida;
+            return saida;   
         }
 
     }       
