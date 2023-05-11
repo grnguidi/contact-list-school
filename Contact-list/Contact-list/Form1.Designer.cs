@@ -173,21 +173,6 @@ namespace Contact_list
         private System.Windows.Forms.TextBox numbertxt;
         private System.Windows.Forms.Button addcontactbtn;
     }
-    public partial class Form1 : Form
-    {
-        public Form1()
-        {
-            InitializeComponent();
-        }
-
-        private void addcontactbtn_click(object sender, EventArgs e)
-        {
-            Contact objcontact = new Contact();
-            contactlst.Items.Add(objcontact.ToString());
-        }
-    }
-
-
 }
 
 
