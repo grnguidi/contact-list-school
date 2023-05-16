@@ -12,6 +12,7 @@ namespace Contact_list
         private string firstname;
         private string lastname;
         private string phone;
+        private string email;
 
         //properties
         public string FirstName
@@ -41,6 +42,12 @@ namespace Contact_list
                 }
             } 
         }   
+
+        public string Email
+        {
+            get { return Email; }
+            set { Email = value;}
+        }
     
         //class bulding metod
 
@@ -54,7 +61,7 @@ namespace Contact_list
 
         //metod overcharge
 
-        public Contact(string firstname, string lastname,string phone ) 
+        public Contact(string firstname, string lastname,string phone, string email ) 
         { 
             FirstName = firstname;
             LastName = lastname;
@@ -70,6 +77,7 @@ namespace Contact_list
                     Phone.Substring(0, 1),
                     Phone.Substring(2,4),
                     Phone.Substring(7,3));
+            saida += String.Format(" ", Email);
             return saida;   
         }
 

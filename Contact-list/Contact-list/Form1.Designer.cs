@@ -39,12 +39,13 @@ namespace Contact_list
             this.lastnametxt = new System.Windows.Forms.TextBox();
             this.numbertxt = new System.Windows.Forms.TextBox();
             this.addcontactbtn = new System.Windows.Forms.Button();
+            this.emailtxt = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 14);
             this.label1.Location = new System.Drawing.Point(12, 48);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
@@ -55,7 +56,6 @@ namespace Contact_list
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 51);
             this.label2.Location = new System.Drawing.Point(12, 85);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 13);
@@ -66,7 +66,6 @@ namespace Contact_list
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 90);
             this.label3.Location = new System.Drawing.Point(12, 124);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 13);
@@ -77,7 +76,6 @@ namespace Contact_list
             // contactlst
             // 
             this.contactlst.FormattingEnabled = true;
-            this.contactlst.Location = new System.Drawing.Point(192, 12);
             this.contactlst.Location = new System.Drawing.Point(192, 46);
             this.contactlst.Name = "contactlst";
             this.contactlst.Size = new System.Drawing.Size(227, 160);
@@ -85,7 +83,6 @@ namespace Contact_list
             // 
             // nametxt
             // 
-            this.nametxt.Location = new System.Drawing.Point(74, 14);
             this.nametxt.Location = new System.Drawing.Point(74, 48);
             this.nametxt.Name = "nametxt";
             this.nametxt.Size = new System.Drawing.Size(69, 20);
@@ -93,7 +90,6 @@ namespace Contact_list
             // 
             // lastnametxt
             // 
-            this.lastnametxt.Location = new System.Drawing.Point(76, 51);
             this.lastnametxt.Location = new System.Drawing.Point(76, 85);
             this.lastnametxt.Name = "lastnametxt";
             this.lastnametxt.Size = new System.Drawing.Size(67, 20);
@@ -101,7 +97,6 @@ namespace Contact_list
             // 
             // numbertxt
             // 
-            this.numbertxt.Location = new System.Drawing.Point(77, 91);
             this.numbertxt.Location = new System.Drawing.Point(77, 125);
             this.numbertxt.Name = "numbertxt";
             this.numbertxt.Size = new System.Drawing.Size(66, 20);
@@ -109,8 +104,7 @@ namespace Contact_list
             // 
             // addcontactbtn
             // 
-            this.addcontactbtn.Location = new System.Drawing.Point(15, 117);
-            this.addcontactbtn.Location = new System.Drawing.Point(15, 151);
+            this.addcontactbtn.Location = new System.Drawing.Point(15, 197);
             this.addcontactbtn.Name = "addcontactbtn";
             this.addcontactbtn.Size = new System.Drawing.Size(128, 55);
             this.addcontactbtn.TabIndex = 7;
@@ -118,11 +112,30 @@ namespace Contact_list
             this.addcontactbtn.UseVisualStyleBackColor = true;
             this.addcontactbtn.Click += new System.EventHandler(this.Button1_Click);
             // 
+            // emailtxt
+            // 
+            this.emailtxt.Location = new System.Drawing.Point(77, 161);
+            this.emailtxt.Name = "emailtxt";
+            this.emailtxt.Size = new System.Drawing.Size(66, 20);
+            this.emailtxt.TabIndex = 9;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(15, 161);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(32, 13);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Email";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(431, 471);
+            this.Controls.Add(this.emailtxt);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.addcontactbtn);
             this.Controls.Add(this.numbertxt);
             this.Controls.Add(this.lastnametxt);
@@ -148,6 +161,8 @@ namespace Contact_list
         private System.Windows.Forms.TextBox lastnametxt;
         private System.Windows.Forms.TextBox numbertxt;
         private System.Windows.Forms.Button addcontactbtn;
+        private TextBox emailtxt;
+        private Label label4;
     }
 }
 

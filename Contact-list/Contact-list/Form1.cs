@@ -37,6 +37,11 @@ namespace Contact_list
             Contact objcontact = new Contact();
             contactlst.Items.Add(objcontact.ToString());
         }
-     }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
 
