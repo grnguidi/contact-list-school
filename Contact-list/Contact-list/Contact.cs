@@ -17,36 +17,36 @@ namespace Contact_list
         //properties
         public string FirstName
         {
-            get { return FirstName;  }
-            set { FirstName = value; }
+            get { return firstname;  }
+            set { firstname = value; }
         }
 
         public string LastName
         { 
-            get { return LastName; } 
-            set { LastName = value; } 
+            get { return lastname; } 
+            set { lastname = value; } 
         }
 
         public string Phone
         { 
-            get { return Phone;  }
+            get { return phone;  }
             set 
             {
                 if (value.Length == 11)
                 {
-                    Phone = value;
+                    phone = value;
                 }
                 else
                 {
-                    Phone = "00-00000-0000";
+                    phone = "00000000000";
                 }
             } 
         }   
 
         public string Email
         {
-            get { return Email; }
-            set { Email = value;}
+            get { return email; }
+            set { email = value;}
         }
     
         //class bulding metod
@@ -55,7 +55,7 @@ namespace Contact_list
         {
             FirstName = "José";
             LastName = "Da Silva";
-            Phone= "11-96512-2170";
+            Phone= "11965122170";
             Email = "josedasilva@gmail.com";
         }
 
@@ -72,12 +72,12 @@ namespace Contact_list
         public override string ToString()
         {
             string saida = string.Empty;
-            saida += String.Format("{0}, {1}", FirstName, LastName);
+            saida += String.Format("{0}, {1}", firstname, lastname);
             saida += String.Format("{0}-{1}-{2}",
-                    Phone.Substring(0, 1),
-                    Phone.Substring(2,4),
-                    Phone.Substring(7,3));
-            saida += String.Format(" ", Email);
+                    phone.Substring(0, 2),
+                    phone.Substring(2,5),
+                    phone.Substring(7,4));
+            saida += string.Format("{0}", email);
             return saida;   
         }
 

@@ -41,6 +41,7 @@ namespace Contact_list
             this.addcontactbtn = new System.Windows.Forms.Button();
             this.emailtxt = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.sortbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -87,6 +88,7 @@ namespace Contact_list
             this.nametxt.Name = "nametxt";
             this.nametxt.Size = new System.Drawing.Size(69, 20);
             this.nametxt.TabIndex = 4;
+            this.nametxt.TextChanged += new System.EventHandler(this.nametxt_TextChanged);
             // 
             // lastnametxt
             // 
@@ -129,11 +131,22 @@ namespace Contact_list
             this.label4.Text = "Email";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
+            // sortbtn
+            // 
+            this.sortbtn.Location = new System.Drawing.Point(192, 212);
+            this.sortbtn.Name = "sortbtn";
+            this.sortbtn.Size = new System.Drawing.Size(227, 55);
+            this.sortbtn.TabIndex = 10;
+            this.sortbtn.Text = "Sort";
+            this.sortbtn.UseVisualStyleBackColor = true;
+            this.sortbtn.Click += new System.EventHandler(this.Button1_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(431, 471);
+            this.Controls.Add(this.sortbtn);
             this.Controls.Add(this.emailtxt);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.addcontactbtn);
@@ -146,6 +159,7 @@ namespace Contact_list
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -163,6 +177,7 @@ namespace Contact_list
         private System.Windows.Forms.Button addcontactbtn;
         private TextBox emailtxt;
         private Label label4;
+        private Button sortbtn;
     }
 }
 
